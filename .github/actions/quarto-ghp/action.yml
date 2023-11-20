@@ -40,7 +40,6 @@ runs:
           pip install -Uq git+https://github.com/fastai/fastcore.git
           pip install -Uq git+https://github.com/fastai/execnb.git
           pip install -Uq git+https://github.com/fastai/nbdev.git
-          pip install numpy
           wget -q $(curl https://latest.fast.ai/pre/quarto-dev/quarto-cli/linux-amd64.deb)
           sudo dpkg -i quarto*.deb
         else
@@ -51,6 +50,7 @@ runs:
         else
           test -f setup.py && pip install -e ".[dev]"
         fi
+        pip install numpy
         nbdev_docs
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3

@@ -14,5 +14,5 @@ jobs:
     steps: 
     - name: My first step - check out repository
       uses: actions/checkout@v4
-    - name: Reimplementing quartio ghp
+    - name: Reimplementing quarto ghp
       uses: ./.github/actions/quarto-ghp
