@@ -9,7 +9,9 @@ class TrieNode:
     def __init__(self) -> None:
         self.end = False
         self.letters = {}
-        
+
+
+# %% ../nbs/01_trie.ipynb 4
 class Trie:
     "Trie data structure. Can store multiple words in a graph linking each consecutive letters and make branches in them."
     def __init__(self) -> None:
