@@ -11,4 +11,4 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps: [uses: ./.github/actions/quarto-ghp/]
+    steps: [uses: ./.github/actions/quarto-ghp]
