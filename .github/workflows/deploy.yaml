@@ -11,4 +11,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps: [uses: ./.github/actions/quarto-ghp]
+    steps: 
+    - name: My first step - check out repository
+      uses: actions/checkout@v4
+    - name: Reimplementing quartio ghp
+      uses: ./.github/actions/quarto-ghp
