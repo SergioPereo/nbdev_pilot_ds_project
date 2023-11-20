@@ -5,7 +5,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps: 
-    - name: My first step - check out repository
-      uses: actions/checkout@v4
-    - name: Reimplementing quarto ghp
-      uses: ./.github/actions/nbdev-ci
+      uses: fastai/workflows/nbdev-ci
