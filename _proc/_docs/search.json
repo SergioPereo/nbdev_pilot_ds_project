@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "bloom_filter.html",
+    "href": "bloom_filter.html",
+    "title": "Data Structures",
+    "section": "",
+    "text": "BloomFilter\n\n BloomFilter (m=10, k=1)\n\nBloom filter description\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nm\nint\n10\nm description\n\n\nk\nint\n1\nk description"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdev_pilot_ds_project",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "nbdev_pilot_ds_project",
+    "section": "Install",
+    "text": "Install\npip install nbdev_pilot_ds_project"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdev_pilot_ds_project",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2"
+  },
+  {
+    "objectID": "trie.html",
+    "href": "trie.html",
+    "title": "Trie",
+    "section": "",
+    "text": "class TrieNode:\n    \"Stores the hashtable of the letters and the if that node is an end of a word.\"\n    def __init__(self) -&gt; None:\n        self.end = False\n        self.letters = {}\n        \nclass Trie:\n    \"Trie data structure. Can store multiple words in a graph linking each consecutive letters and make branches in them.\"\n    def __init__(self) -&gt; None:\n        self.head = TrieNode()\n    \"Insert a word into the trie\"\n    def insert(self, \n                word: str) -&gt; None: # word to store in the trie\n        actual_iteration = self.head\n        for letter in word:\n            actual_iteration_letters = actual_iteration.letters\n            if not letter in actual_iteration_letters:\n                actual_iteration_letters[letter] = TrieNode()\n            actual_iteration=actual_iteration_letters[letter]\n        actual_iteration.end = True\n    \"Check if a word exist in the trie\"\n    def search(self, \n                word:str) -&gt; bool: # check if the word is stored in the trie\n        actual_iteration = self.head\n        for letter in word:\n            actual_iteration_letters = actual_iteration.letters\n            if not letter in actual_iteration_letters:\n                return False\n            actual_iteration=actual_iteration_letters[letter]\n        return actual_iteration.end\n\n\n\nTrie\n\n Trie ()\n\nTrie data structure. Can store multiple words in a graph linking each consecutive letters and make branches in them."
+  }
+]

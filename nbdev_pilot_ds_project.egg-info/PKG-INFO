@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: nbdev-pilot-ds-project
+Version: 0.0.1
+Summary: This repository contains pilot code using the nbdev library that helps out with data manipulation. This is just a pilot repo for our data sources class.
+Home-page: https://github.com/SergioPereo/nbdev_pilot_ds_project
+Author: Sergio Pereo
+Author-email: sergio.pereo@outlook.com
+License: Apache Software License 2.0
+Keywords: nbdev jupyter notebook python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+This file will be overwritten by `index.ipynb`
+
+

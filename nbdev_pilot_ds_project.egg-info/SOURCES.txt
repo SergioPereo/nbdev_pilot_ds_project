@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+nbdev_pilot_ds_project/__init__.py
+nbdev_pilot_ds_project/_modidx.py
+nbdev_pilot_ds_project/bloomf.py
+nbdev_pilot_ds_project/core.py
+nbdev_pilot_ds_project/trie.py
+nbdev_pilot_ds_project.egg-info/PKG-INFO
+nbdev_pilot_ds_project.egg-info/SOURCES.txt
+nbdev_pilot_ds_project.egg-info/dependency_links.txt
+nbdev_pilot_ds_project.egg-info/entry_points.txt
+nbdev_pilot_ds_project.egg-info/not-zip-safe
+nbdev_pilot_ds_project.egg-info/requires.txt
+nbdev_pilot_ds_project.egg-info/top_level.txt
