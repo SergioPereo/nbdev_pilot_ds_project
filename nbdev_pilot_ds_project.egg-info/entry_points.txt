@@ -1,6 +1,0 @@
-[console_scripts]
-
-
-[nbdev]
-nbdev_pilot_ds_project = nbdev_pilot_ds_project._modidx:d
-
