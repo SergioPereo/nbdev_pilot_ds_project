@@ -15,9 +15,10 @@ class Trie:
     "Trie data structure. Can store multiple words in a graph linking each consecutive letters and make branches in them."
     def __init__(self) -> None:
         self.head = TrieNode()
+    "Insert a word into the trie."
     def insert(self, 
-            word: str # word to store in the trie
-            ) -> bool: 
+            word: str # Word to store in the trie
+            ) -> bool: # Returns true if it execute correctly, false if doesn't
         actual_iteration = self.head
         for letter in word:
             actual_iteration_letters = actual_iteration.letters
@@ -26,3 +27,14 @@ class Trie:
             actual_iteration=actual_iteration_letters[letter]
         actual_iteration.end = True
         return True
+    "Search a word in the trie"
+    def search(self, 
+                word: str # Word to search
+                ) -> bool: # Returns true if it exists, false if doesn't
+        actual_iteration = self.head
+        for letter in word:
+            actual_iteration_letters = actual_iteration.letters
+            if not letter in actual_iteration_letters:
+                return False
+            actual_iteration=actual_iteration_letters[letter]
+        return actual_iteration.end
