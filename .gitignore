@@ -1,3 +1,7 @@
 /venv
 nbs/.ipynb_checkpoints/
 nbdev_pilot_ds_project/__pycache__/
+.pypirc
+nbdev_pilot_ds_project.egg-info/
+build/
+dist/
