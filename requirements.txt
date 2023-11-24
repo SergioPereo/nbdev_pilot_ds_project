@@ -62,7 +62,6 @@ more-itertools==10.1.0
 nbclient==0.8.0
 nbconvert==7.10.0
 nbdev==2.3.13
--e git+ssh://git@github.com/SergioPereo/nbdev_pilot_ds_project.git@dc1b6f85c4ac2276035ba352586c5db96253e39b#egg=nbdev_pilot_ds_project
 nbformat==5.9.2
 nest-asyncio==1.5.8
 nh3==0.2.14
