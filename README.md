@@ -1,3 +1,7 @@
+## Presentación
+
+Puedes acceder a la presentación al dar click en la palabra [link](https://docs.google.com/presentation/d/1juQ-Jf7oFh4Oq3N19KN2kUgHJ8-BsHSrlgDQj2pw21U/edit?usp=sharing):
+
 ## Instalación
 
 ### Virtual Env
