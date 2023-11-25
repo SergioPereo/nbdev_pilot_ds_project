@@ -1,1 +1,0 @@
-Sitemap: https://SergioPereo.github.io/nbdev_pilot_ds_project/sitemap.xml

@@ -33,5 +33,5 @@ Crea un contenedor de la imagen
 docker run -p 8888:8888 nbdev_demo_image
 ```
 
-Esto va a correr un jupyter server en el puerto 8888 por lo que debe de generarles el servidor en esta [dirección](localhost:8888)
+Esto va a correr un jupyter server en el puerto 8888 por lo que debe de generarles el servidor en esta dirección localhost:8888.
 Desde aquí pueden empezar a trabajar en su proyecto. El entorno de jupyter tiene algunos problemas con ciertas funciones avanzadas de nbdev. Por lo que puede provocar problemas. Nosotros recomendamos trabajar en el virtual env.

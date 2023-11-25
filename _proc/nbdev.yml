@@ -1,9 +1,0 @@
-project:
-  output-dir: _docs
-
-website:
-  title: "nbdev_pilot_ds_project"
-  site-url: "https://SergioPereo.github.io/nbdev_pilot_ds_project"
-  description: "This repository contains pilot code using the nbdev library that helps out with data manipulation. This is just a pilot repo for our data sources class."
-  repo-branch: main
-  repo-url: "https://github.com/SergioPereo/nbdev_pilot_ds_project"

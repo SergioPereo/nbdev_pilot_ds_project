@@ -1,6 +1,0 @@
-website:
-  sidebar:
-    contents:
-      - index.ipynb
-      - 00_bloom_filter.ipynb
-      - 01_trie.ipynb
