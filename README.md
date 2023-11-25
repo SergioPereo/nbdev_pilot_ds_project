@@ -10,7 +10,7 @@
   Activa el ambiente virtual: 
   
   ```bash
-  source venv-bin-activate
+  source venv/bin/activate
   ```
   Instala los requerimientos
   
