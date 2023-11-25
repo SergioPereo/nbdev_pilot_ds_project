@@ -9,45 +9,46 @@ import numpy as np
 import math as mth
 
 class BloomFilter():
-    "Bloom filter description"
+    "Bloom filter data structure. Checks if an element is most definitely not in a dataset through hashing functions and an array of bits"
     def __init__(self, 
-                m=10,   # m description
-                k=1):   # k description
+                m:int=10,   # Number of elements we want to insert in the data structure
+                k:int=1):   # Number of hash functions we´re going to make to each element
         self.bits = mth.ceil(mth.log(m,2))
         self.hexa_characters = mth.ceil(self.bits/4) 
         self.MD5proceses = mth.ceil(k*self.hexa_characters/32)
         self.m = m
         self.k = k
         self.bloom = np.zeros(m, dtype = bool)
-
-    def k_positions(self, object: str):
-        # Returns 'k' positions in which we´re going to put 'True' in the BloomFilter
+    
+    def k_positions(self,
+                    object:str):
+        "Returns 'k' positions in which we´re going to put 'True' in the BloomFilter"
         positions = []
         hash = ''
-        
         for proceses in range(self.MD5proceses):
             string2 = object +str(proceses)
             hexa = hl.md5(string2.encode('utf-8')).hexdigest()
             hash += hexa
-        
         for i in range(0, self.k*self.hexa_characters, self.hexa_characters):
             value = int(hash[i:i + self.hexa_characters], 16) % self.m
             positions.append(value)
-        
         return positions
 
-    def insert(self, object: str):
+    def insert(self, 
+               object: str): # A string value we´re going to insert
+        "Inserts an element in the bloom filter"
         positions = self.k_positions(object)
-
         for pos in positions:
             self.bloom[pos] = True
 
-    def search(self, object: str):
+    def search(self, 
+               object: str # The word we are going to search for
+              )-> bool: # Returns true if the string is contained in the bloom filter
+        "Searches for an element in the bloom filter"
         positions = self.k_positions(object)
         i = 0
         found = True
         while i < len(positions) and found:
             found = self.bloom[positions[i]]
             i +=1
-
         return found
