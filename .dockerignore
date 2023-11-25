@@ -5,3 +5,4 @@ nbdev_pilot_ds_project/__pycache__/
 nbdev_pilot_ds_project.egg-info/
 build/
 dist/
+.ipynb_checkpoints
