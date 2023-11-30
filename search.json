@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "trie.html",
+    "href": "trie.html",
+    "title": "Trie",
+    "section": "",
+    "text": "source"
+  },
+  {
+    "objectID": "trie.html#probando-los-métodos",
+    "href": "trie.html#probando-los-métodos",
+    "title": "Trie",
+    "section": "Probando los métodos",
+    "text": "Probando los métodos\nCreamos el Trie\n\ntriesito = Trie()\n\nAhora, para insertar un elemento:\n\nassert triesito.insert(\"José Vasconcelos\")\nassert triesito.insert(\"Catorce\")\n\nAhora probaremos la búsqueda. Primero para un elemento que está y luego para otro elemento que no\n\nassert triesito.search(\"José Vasconcelos\")\n\n\nassert triesito.search(\"Juan Carlos\")==False"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdev_pilot_ds_project",
+    "section": "",
+    "text": "pip install nbdev_pilot_ds_project"
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "nbdev_pilot_ds_project",
+    "section": "",
+    "text": "pip install nbdev_pilot_ds_project"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdev_pilot_ds_project",
+    "section": "How to use",
+    "text": "How to use\nExamples:\n\nfrom nbdev_pilot_ds_project.trie import Trie\n\ntrie = Trie()\n\nprint(trie.insert(\"Hello\"))\nprint(trie.insert(\"hello\"))\nprint(trie.search(\"Hello\"))\nprint(trie.search(\"Hellow\"))\n\nTrue\nTrue\nTrue\nFalse"
+  },
+  {
+    "objectID": "bloom_filter.html",
+    "href": "bloom_filter.html",
+    "title": "Bloom filter",
+    "section": "",
+    "text": "source"
+  },
+  {
+    "objectID": "bloom_filter.html#pruebas-de-los-métodos",
+    "href": "bloom_filter.html#pruebas-de-los-métodos",
+    "title": "Bloom filter",
+    "section": "Pruebas de los métodos",
+    "text": "Pruebas de los métodos\nPara crear un Bloom Filter, lo hacemos de la siguiente manera:\n\nbloomsito = BloomFilter()\n\nPara insertar elementos:\n\nbloomsito.insert(\"hola\")\nbloomsito.insert(\"adios\")\n\nPor ultimo, para buscar un elemento:\n\nprint(bloomsito.search(\"hola\"))\n\nTrue\n\n\n\nprint(bloomsito.search(\"probablemente\"))\n\nFalse\n\n\nRecordemos que en un Bloom Filter podemos garantizar que un objeto NO esté contenido, y podemos decir con cierta probabilidad si un elemento está en el bloom. La probabilidad depende de la cantidad de elementos que vamos a insertar y de la cantidad de funciones de hash que hicimos"
+  }
+]
