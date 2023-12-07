@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbdevnuevo"
+  site-url: "https://Omarti34.github.io/nbdevnuevo"
+  description: "hola como estas genaro, estamos al cien"
+  repo-branch: main
+  repo-url: "https://github.com/Omarti34/nbdevnuevo"
